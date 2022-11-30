@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="kulso">
+        <div id="kerdes">
+            Kérdés szövege
+        </div>
+        <div id="kozep">
+            <div id="válaszlehetőség">
+                <div id="V1" class="kerdes katt">Válasz 1</div>
+                <div id="V2" class="kerdes katt jo">Válasz 2</div>
+                <div id="V3" class="kerdes katt rossz">Válasz 3</div>
+            </div>
+            <div id="img">
+                <img id="img1" src="https://kzgzdiag426.blob.core.windows.net/netcore/teszt-0050.jpg" />
+            </div>
+            <div id="gombok">
+                <div class="gomb katt">Vissza</div>
+                <div class="gomb katt">Előre</div>
+            </div>
+        </div>
+    </div>
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        div {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+
+        #kulso {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #kozep {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        #válaszlehetőség {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        #img {
+            overflow: hidden;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        #gombok {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .gomb {
+            padding: 20px;
+            width: 80px;
+        }
+
+        .katt:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .jo {
+            background-color: green;
+            color: white;
+        }
+
+        .rossz {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</body>
+</html>

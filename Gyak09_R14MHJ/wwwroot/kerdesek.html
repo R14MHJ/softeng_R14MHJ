@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="Eredmeny"></div>
+    <script>
+        fetch('/hajo/kerdesek')
+            .then(response => response.json)
+            .then(data => console.log(data)
+        );
+        function kiir(list) {
+            console.log(list)
+            for (var i = 0; i < list.length; i++) {
+                let newitem = document.createElement("div");
+                newitem.innerText = list[i];
+                document.getElementById("Eredmeny").appendChild(newitem);
+            }
+        }
+    </script>
+</body>
+</html>
