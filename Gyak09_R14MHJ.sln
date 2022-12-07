@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32802.462
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gyak09_R14MHJ", "Gyak09_R14MHJ\Gyak09_R14MHJ.csproj", "{40570940-DD1E-43BC-A86E-2CA4F305B38F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gyak09_R14MHJ", "Gyak09_R14MHJ\Gyak09_R14MHJ.csproj", "{40570940-DD1E-43BC-A86E-2CA4F305B38F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excel", "excel\excel.csproj", "{75D0B6A8-7C8E-4034-A904-78EA1E687F5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{40570940-DD1E-43BC-A86E-2CA4F305B38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40570940-DD1E-43BC-A86E-2CA4F305B38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40570940-DD1E-43BC-A86E-2CA4F305B38F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75D0B6A8-7C8E-4034-A904-78EA1E687F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D0B6A8-7C8E-4034-A904-78EA1E687F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D0B6A8-7C8E-4034-A904-78EA1E687F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D0B6A8-7C8E-4034-A904-78EA1E687F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

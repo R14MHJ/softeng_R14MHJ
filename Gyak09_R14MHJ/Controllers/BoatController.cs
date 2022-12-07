@@ -15,16 +15,16 @@ namespace Gyak09_R14MHJ.Controllers
             var lisa = from x in hajoscontext.Questions select x;
             return Ok(lisa);
         }
-        //[HttpGet]
-        //[Route("hajo/kerdesek/{id]")]
-        //public IActionResult mind2(int id)
-        //{
-        //    Models.HajosContext hajoscontext = new Models.HajosContext();
-        //    var list = (from x in hajoscontext.Questions
-        //               where x.QuestionId == id
-        //               select x).FirstOrDefault();
-        //    //var lisa2 = hajoscontext.Questions.Where(x => x.QuestionId == id)
-        //    return Ok(list);
-        //}
+        [HttpGet]
+        [Route("hajo/kerdes/{id}")]
+        public IActionResult mind2(int id)
+        {
+            Models.HajosContext hajoscontext = new Models.HajosContext();
+            var list = (from x in hajoscontext.Questions
+                        where x.QuestionId == id
+                        select x).FirstOrDefault();
+            //var lisa2 = hajoscontext.Questions.Where(x => x.QuestionId == id)
+            return Ok(list);
+        }
     }
 }

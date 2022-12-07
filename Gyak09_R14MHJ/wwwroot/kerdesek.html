@@ -8,14 +8,14 @@
     <div id="Eredmeny"></div>
     <script>
         fetch('/hajo/kerdesek')
-            .then(response => response.json)
-            .then(data => console.log(data)
+            .then(response => response.json())
+            .then(data => kiir(data)
         );
-        function kiir(list) {
-            console.log(list)
-            for (var i = 0; i < list.length; i++) {
+        function kiir(data) {
+            console.log(data)
+            for (var i = 0; i < data.length; i++) {
                 let newitem = document.createElement("div");
-                newitem.innerText = list[i];
+                newitem.innerText = data[i].question1;
                 document.getElementById("Eredmeny").appendChild(newitem);
             }
         }

@@ -11,16 +11,16 @@
         </div>
         <div id="kozep">
             <div id="válaszlehetőség">
-                <div id="V1" class="kerdes katt">Válasz 1</div>
-                <div id="V2" class="kerdes katt jo">Válasz 2</div>
-                <div id="V3" class="kerdes katt rossz">Válasz 3</div>
+                <div id="V1" onclick="valasztas(1)" class="kerdes katt">Válasz 1</div>
+                <div id="V2" onclick="valasztas(2)" class="kerdes katt jo">Válasz 2</div>
+                <div id="V3" onclick="valasztas(3)" class="kerdes katt rossz">Válasz 3</div>
             </div>
             <div id="img">
                 <img id="img1" src="https://kzgzdiag426.blob.core.windows.net/netcore/teszt-0050.jpg" />
             </div>
             <div id="gombok">
-                <div class="gomb katt">Vissza</div>
-                <div class="gomb katt">Előre</div>
+                <div id="vissza" onclick="vissza" class="gomb_v katt">Vissza</div>
+                <div id="elore" onclick="elore" class="gomb_e katt">Előre</div>
             </div>
         </div>
     </div>
@@ -83,5 +83,6 @@
             color: white;
         }
     </style>
+    <script src="main.js"></script>
 </body>
 </html>
