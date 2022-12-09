@@ -26,5 +26,14 @@ namespace Gyak09_R14MHJ.Controllers
             //var lisa2 = hajoscontext.Questions.Where(x => x.QuestionId == id)
             return Ok(list);
         }
+        [HttpGet]
+        [Route("hajo/kerdesszam")]
+        public int mind3() 
+        {
+            Models.HajosContext context = new Models.HajosContext();
+            int kérdésekSzáma = context.Questions.Count();
+
+            return kérdésekSzáma;
+        }
     }
 }
